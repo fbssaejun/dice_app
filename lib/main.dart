@@ -4,6 +4,10 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('App Bar'),
+          backgroundColor: Colors.red
+        ),
         body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -16,7 +20,13 @@ void main() {
             )
           ),
           child: const Center(
-            child: Text('Hello, World!')
+            child: Text(
+              'Boo ya!',
+              style: TextStyle(
+                fontSize: 28,
+                color: Colors.amber
+              )
+            )
           ),
         )
       )
