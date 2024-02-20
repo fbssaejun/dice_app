@@ -6,7 +6,7 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('App Bar'),
+          title: const Text('Dice Roller'),
           backgroundColor: Colors.red
         ),
         body: const GradientContainer(
