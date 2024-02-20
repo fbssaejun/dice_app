@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:dice_app/styled_text.dart';
 
-const startAlignment = Alignment.topRight;
-const endAlignment = Alignment.bottomLeft;
-
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer(this.startAlignment, this.endAlignment, {super.key, required this.colors});
+
+  final List<Color> colors;
+  final Alignment startAlignment;
+  final Alignment endAlignment;
 
   @override
   Widget build(context) {
     return Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: startAlignment,
               end: endAlignment,
-              colors: [
-                Colors.blue,
-                Colors.red
-              ]
+              colors: colors
             )
           ),
           child: const Center(

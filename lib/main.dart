@@ -9,7 +9,14 @@ void main() {
           title: const Text('App Bar'),
           backgroundColor: Colors.red
         ),
-        body: const GradientContainer()
+        body: const GradientContainer(
+          Alignment.topRight,
+          Alignment.bottomLeft,
+          colors: [
+            Colors.red,
+            Colors.blue
+          ]
+        )
       )
     )
   );
